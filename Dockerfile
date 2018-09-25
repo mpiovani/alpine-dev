@@ -7,6 +7,7 @@ ENV PATH $MAVEN_HOME/bin:$PATH
 RUN apk update && \
 	apk upgrade && \
 	apk add --no-cache \
+    git \
     openjdk8 \
     openjdk7 \
     docker \
