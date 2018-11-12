@@ -11,6 +11,9 @@ RUN apk update && \
     openjdk8 \
     openjdk7 \
     docker \
+    make \
+    gcc \
+    g++ \
     python \
     python-dev \
     zip \
