@@ -11,6 +11,8 @@ RUN apk update && \
     openjdk8 \
     openjdk7 \
     docker \
+    python \
+    python-dev \
     zip \
     unzip \
     procps && \
