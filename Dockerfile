@@ -25,7 +25,7 @@ RUN apk update && \
 	tar -zxvf apache-maven-$MAVEN_VERSION-bin.tar.gz && \
 	rm apache-maven-$MAVEN_VERSION-bin.tar.gz && \
 	mv apache-maven-$MAVEN_VERSION /usr/lib/mvn && \
-	npm install -g npm@latest @angular/cli bower gulp && \
+	npm install -g npm @angular/cli bower gulp && \
 	mkdir -p /root/.m2
 
 ADD settings.xml /root/.m2
