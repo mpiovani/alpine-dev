@@ -1,12 +1,21 @@
-FROM mpiovani/alpine-base
+FROM alpine:3.14
 
-ENV MAVEN_VERSION 3.5.0
+ENV MAVEN_VERSION 3.8.3
 ENV MAVEN_HOME /usr/lib/mvn
 ENV PATH $MAVEN_HOME/bin:$PATH
 
 RUN apk update && \
-	apk upgrade && \
-	apk add --no-cache \
+    apk upgrade && \
+    apk add --no-cache \
+    ca-certificates \
+    curl \
+    bash \
+    bash-completion \
+    findutils \
+    vim \
+    tar \
+    wget \
+    tzdata \
     git \
     openjdk8 \
     openjdk7 \
@@ -19,7 +28,6 @@ RUN apk update && \
     zip \
     unzip \
     procps && \
-	cp /usr/share/zoneinfo/Europe/Rome /etc/localtime && \
 	apk add --update --repository http://dl-cdn.alpinelinux.org/alpine/edge/main nodejs nodejs-npm && \
 	wget http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz && \
 	tar -zxvf apache-maven-$MAVEN_VERSION-bin.tar.gz && \
