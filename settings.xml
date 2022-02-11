@@ -4,13 +4,13 @@
         xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <servers>
         <server>
-            <username>jenkins</username>
-            <password>jenkins</password>
+            <username>admin</username>
+            <password>password</password>
             <id>central</id>
         </server>
         <server>
-            <username>jenkins</username>
-            <password>jenkins</password>
+            <username>admin</username>
+            <password>password</password>
             <id>snapshots</id>
         </server>
     </servers>
