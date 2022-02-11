@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine
 
 ENV MAVEN_VERSION 3.8.3
 ENV MAVEN_HOME /usr/lib/mvn
@@ -23,8 +23,6 @@ RUN apk update && \
     make \
     gcc \
     g++ \
-    python \
-    python-dev \
     zip \
     unzip \
     procps && \
