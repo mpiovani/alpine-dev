@@ -26,7 +26,7 @@ RUN apk update && \
     zip \
     unzip \
     procps && \
-	apk add --update --repository http://dl-cdn.alpinelinux.org/alpine/edge/main nodejs nodejs-npm && \
+	apk add --update --repository http://dl-cdn.alpinelinux.org/alpine/edge/main nodejs && \
 	wget http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz && \
 	tar -zxvf apache-maven-$MAVEN_VERSION-bin.tar.gz && \
 	rm apache-maven-$MAVEN_VERSION-bin.tar.gz && \
