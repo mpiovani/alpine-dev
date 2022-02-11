@@ -24,7 +24,7 @@
 					</snapshots>
 					<id>repo-maven</id>
 					<name>repo-maven</name>
-					<url>http://repo1.maven.org/maven2</url>
+					<url>https://repo1.maven.org/maven2</url>
 				</repository-->
 				<repository>
 					<snapshots>
@@ -32,13 +32,13 @@
 					</snapshots>
 					<id>central</id>
 					<name>libs-release</name>
-					<url>http://192.168.12.155:8081//artifactory/libs-release</url>
+					<url>http://192.168.12.156:8081/libs-release</url>
 				</repository>
 				<repository>
 					<snapshots />
 					<id>snapshots</id>
 					<name>libs-snapshot</name>
-					<url>http://192.168.12.155:8081/artifactory/libs-snapshot</url>
+					<url>http://192.168.12.156:8081/libs-snapshot</url>
 				</repository>
 			</repositories>
 			<pluginRepositories>
@@ -48,13 +48,13 @@
 					</snapshots>
 					<id>central</id>
 					<name>plugins-release</name>
-					<url>http://192.168.12.155:8081/artifactory/plugins-release</url>
+					<url>http://192.168.12.156:8081/plugins-release</url>
 				</pluginRepository>
 				<pluginRepository>
 					<snapshots />
 					<id>snapshots</id>
 					<name>plugins-snapshot</name>
-					<url>http://192.168.12.155:8081/artifactory/plugins-snapshot</url>
+					<url>http://192.168.12.156:8081/plugins-snapshot</url>
 				</pluginRepository>
 			</pluginRepositories>
 			<id>artifactory</id>
